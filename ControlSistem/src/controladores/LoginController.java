@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/javafx/FXMLController.java to edit this template
  */
-package archivos;
+package controladores;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -18,6 +18,7 @@ import javafx.scene.control.TextField;
  *
  * @author Mary Flores
  */
+  
 public class LoginController implements Initializable {
     @FXML
     private Button close;
@@ -33,11 +34,13 @@ public class LoginController implements Initializable {
         System.exit(0);
     }
     @Override
-       public void initialize(URL url, ResourceBundle rb) {
-    }    
-    
-    void login(ActionEvent event){
-        
+    public void initialize(URL url, ResourceBundle rb) {
     }
+
+    @FXML
+    void loginAdmin(ActionEvent event) {
+        System.out.println("¡Login presionado!");
+    }
+
     
 }

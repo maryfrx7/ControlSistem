@@ -1,0 +1,23 @@
+/*
+ * Empty Stylesheet file.
+ */
+.close{
+    -fx-background-color:transparent;
+    -fx-cursor:hand;
+}
+.barra-superior{
+    -fx-background-color:#d426e8,#c676d0;
+    -fx-border-color:#000;
+    -fx-border-width:.4px 0px .4px .4px;
+}
+.login-btn{
+    -fx-background-color:linear-gradient(to bottom, #d426e8,#c676d0);
+    -fx-background-radius:5px;
+    -fx-text-fill:#fff;
+    -fx-font-size:14px;
+    -fx-font-family:"Arial";
+    -fx-cursor:hand;
+}
+.login-btn:hover{
+    -fx-background-color:linear-gradient(to bottom, #21a7ae,#368981);
+}
