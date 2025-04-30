@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="fond" stylesheets="@../estilos/menu.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controladores.MenuController">
+   <children>
+      <Label layoutX="236.0" layoutY="117.0" prefHeight="83.0" prefWidth="167.0" text="Menú" textAlignment="CENTER" textFill="#d426e8">
+         <font>
+            <Font size="56.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnRegistrarProducto" layoutX="36.0" layoutY="245.0" mnemonicParsing="false" onAction="#registrarProducto" styleClass="login-btn" stylesheets="@../estilos/menu.css" text="Registrar producto" />
+      <Button fx:id="btnRegistrarCliente" layoutX="182.0" layoutY="245.0" mnemonicParsing="false" onAction="#registrarCliente" styleClass="login-btn" stylesheets="@../estilos/menu.css" text="Registrar cliente" />
+      <Button fx:id="btnRegistrarVenta" layoutX="319.0" layoutY="245.0" mnemonicParsing="false" onAction="#registrarVenta" styleClass="login-btn" stylesheets="@../estilos/menu.css" text="Registrar venta" />
+      <Button fx:id="btnHistorialVentas" layoutX="445.0" layoutY="245.0" mnemonicParsing="false" onAction="#historialVentas" styleClass="login-btn" stylesheets="@../estilos/menu.css" text="Historial de ventas " />
+      <ImageView fitHeight="46.0" fitWidth="48.0" layoutX="24.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true" />
+      <AnchorPane layoutX="-1.0" layoutY="-3.0" prefHeight="46.0" prefWidth="607.0" styleClass="barra-superior" stylesheets="@../estilos/menu.css" />
+      <Button fx:id="close" layoutX="533.0" layoutY="10.0" mnemonicParsing="false" onAction="#close" prefHeight="24.0" prefWidth="58.0" styleClass="close" stylesheets="@../estilos/menu.css">
+         <graphic>
+            <FontAwesomeIcon fill="WHITE" glyphName="CLOSE" size="1.2em" />
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>
