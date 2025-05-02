@@ -1,6 +1,11 @@
 /*
  * Empty Stylesheet file.
  */
+.show-form{
+    -fx-background-color:linear-gradient(to bottom right, #d426e8, #eeb7f2);
+    -fx-border-color:#000;
+    -fx-border-width:.4px 0px .4px .4px;
+}
 .textfield{
     -fx-background-color:linear-gradient(to bottom, #efefef, #eee);
     -fx-background-radius:4px;

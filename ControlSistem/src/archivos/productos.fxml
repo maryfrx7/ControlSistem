@@ -10,11 +10,11 @@
     <children>
         <AnchorPane prefHeight="400.0" prefWidth="306.0">
             <children>
-                <TextField fx:id="txtNombre" layoutX="43.0" layoutY="116.0" onAction="#registrarProducto" prefHeight="30.0" prefWidth="220.0" promptText="Nombre producto" styleClass="textfield" stylesheets="@../estilos/productos.css" />
-                <TextField fx:id="txtStock" layoutX="43.0" layoutY="164.0" onAction="#registrarProducto" prefHeight="30.0" prefWidth="220.0" promptText="Stock" styleClass="textfield" stylesheets="@../estilos/productos.css" />
-                <TextField fx:id="txtPrecio" layoutX="43.0" layoutY="212.0" onAction="#registrarProducto" prefHeight="30.0" prefWidth="220.0" promptText="Precio" styleClass="textfield" stylesheets="@../estilos/productos.css" />
-                <TextField fx:id="txtId" layoutX="43.0" layoutY="69.0" onAction="#registrarProducto" prefHeight="30.0" prefWidth="220.0" promptText="Id" styleClass="textfield" stylesheets="@../estilos/productos.css" />
-                <ComboBox fx:id="Categoría" layoutX="43.0" layoutY="259.0" prefHeight="30.0" prefWidth="220.0" promptText="Categoría" styleClass="textfield" stylesheets="@../estilos/productos.css" />
+                <TextField fx:id="txtNombreP" layoutX="43.0" layoutY="116.0" onAction="#registrarProducto" prefHeight="30.0" prefWidth="220.0" promptText="Nombre producto" styleClass="textfield" stylesheets="@../estilos/productos.css" />
+                <TextField fx:id="txtStockP" layoutX="43.0" layoutY="164.0" onAction="#registrarProducto" prefHeight="30.0" prefWidth="220.0" promptText="Stock" styleClass="textfield" stylesheets="@../estilos/productos.css" />
+                <TextField fx:id="txtPrecioP" layoutX="43.0" layoutY="212.0" onAction="#registrarProducto" prefHeight="30.0" prefWidth="220.0" promptText="Precio" styleClass="textfield" stylesheets="@../estilos/productos.css" />
+                <TextField fx:id="txtIdP" layoutX="43.0" layoutY="69.0" onAction="#registrarProducto" prefHeight="30.0" prefWidth="220.0" promptText="Id" styleClass="textfield" stylesheets="@../estilos/productos.css" />
+                <ComboBox fx:id="Categoria" layoutX="43.0" layoutY="259.0" prefHeight="30.0" prefWidth="220.0" promptText="Categoría" styleClass="textfield" stylesheets="@../estilos/productos.css" />
                 <Button fx:id="btnRegistrarProducto" layoutX="49.0" layoutY="319.0" mnemonicParsing="false" onAction="#registrarProducto" styleClass="btn-registrarproducto" stylesheets="@../estilos/productos.css" text="Guardar" />
                 <Button fx:id="btnModificar" layoutX="180.0" layoutY="319.0" mnemonicParsing="false" onAction="#modificarProducto" styleClass="btn-registrarproducto" stylesheets="@../estilos/productos.css" text="Modificar" />
             </children>
@@ -31,6 +31,6 @@
         </AnchorPane>
         <Button fx:id="btnBuscar" layoutX="314.0" layoutY="319.0" mnemonicParsing="false" onAction="#buscarProducto" styleClass="btn-registrarproducto" stylesheets="@../estilos/productos.css" text="Buscar" />
         <Button fx:id="btnEliminar" layoutX="461.0" layoutY="319.0" mnemonicParsing="false" onAction="#eliminarProducto" styleClass="btn-registrarproducto" stylesheets="@../estilos/productos.css" text="Eliminar" />
-        <AnchorPane fx:id="anchorderecho" layoutX="329.0" layoutY="60.0" prefHeight="237.0" prefWidth="237.0" styleClass="left-form" stylesheets="@../estilos/loginDesign.css" />
+        <AnchorPane fx:id="anchorderecho" layoutX="329.0" layoutY="60.0" prefHeight="237.0" prefWidth="237.0" styleClass="show-form" stylesheets="@../estilos/productos.css" />
     </children>
 </AnchorPane>

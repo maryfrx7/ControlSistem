@@ -3,8 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/Users/Mary%20Flores/Documents/ControlSistem/ControlSistem/src/archivos/login.fxml</file>
-            <file>file:/D:/Users/Mary%20Flores/Documents/ControlSistem/ControlSistem/src/estilos/loginDesign.css</file>
+            <file>file:/D:/Users/Mary%20Flores/Documents/ControlSistem/ControlSistem/src/archivos/mostrarproductos.fxml</file>
+            <file>file:/D:/Users/Mary%20Flores/Documents/ControlSistem/ControlSistem/src/controladores/MostrarproductosController.java</file>
+            <file>file:/D:/Users/Mary%20Flores/Documents/ControlSistem/ControlSistem/src/controladores/ProductosController.java</file>
+            <file>file:/D:/Users/Mary%20Flores/Documents/ControlSistem/ControlSistem/src/archivos/productos.fxml</file>
         </group>
     </open-files>
 </project-private>
