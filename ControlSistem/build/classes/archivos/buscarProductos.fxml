@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="290.0" prefWidth="311.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controladores.BuscarProductosController">
+   <children>
+      <AnchorPane layoutX="3.0" prefHeight="314.0" prefWidth="306.0">
+         <children>
+            <TextField fx:id="txtNombreBuscar" layoutX="44.0" layoutY="113.0" onAction="#registrarProducto" prefHeight="30.0" prefWidth="220.0" promptText="Nombre producto" styleClass="textfield" stylesheets="@../estilos/productos.css" />
+            <TextField fx:id="txtStockBuscar" layoutX="44.0" layoutY="157.0" onAction="#registrarProducto" prefHeight="30.0" prefWidth="220.0" promptText="Stock" styleClass="textfield" stylesheets="@../estilos/productos.css" />
+            <TextField fx:id="txtPrecioBuscar" layoutX="43.0" layoutY="196.0" onAction="#registrarProducto" prefHeight="30.0" prefWidth="220.0" promptText="Precio" styleClass="textfield" stylesheets="@../estilos/productos.css" />
+            <TextField fx:id="txtIdBuscar" layoutX="43.0" layoutY="71.0" onAction="#registrarProducto" prefHeight="30.0" prefWidth="220.0" promptText="Id buscar" styleClass="textfield" stylesheets="@../estilos/productos.css" />
+            <ComboBox fx:id="CategoriaBuscar" layoutX="43.0" layoutY="237.0" prefHeight="30.0" prefWidth="220.0" promptText="Categoría" styleClass="textfield" stylesheets="@../estilos/productos.css" />
+            <Button fx:id="btnAceptar" layoutX="120.0" layoutY="274.0" mnemonicParsing="false" onAction="#registrarProducto" styleClass="btn-registrarproducto" stylesheets="@../estilos/productos.css" text="Aceptar" />
+            <Text layoutX="44.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ingresa algun dato para buscar" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

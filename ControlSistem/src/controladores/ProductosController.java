@@ -16,6 +16,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
@@ -34,8 +35,6 @@ public class ProductosController implements Initializable {
     @FXML
     private Button btnRegistrarProducto;
     @FXML
-    private ComboBox<String> Categoria;
-    @FXML
     private Button close;
     @FXML
     private AnchorPane anchorderecho;
@@ -48,22 +47,19 @@ public class ProductosController implements Initializable {
     @FXML
     private Button btnEliminar;
     @FXML
-    private TextField txtNombreP;
-    @FXML
-    private TextField txtStockP;
-    @FXML
-    private TextField txtPrecioP;
-    @FXML
-    private TextField txtIdP;
+    private AnchorPane leftform;
 
     /**
      * Initializes the controller class.
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        Categoria.getItems().addAll("Lácteos", "Bebidas", "Abarrotes", "Limpieza");
-    }
 
+    }
+    private void setRootNode(Parent root) {
+        leftform.getChildren().clear();
+        leftform.getChildren().add(root);
+    }
 
      @FXML
     void close(ActionEvent event) {
@@ -78,53 +74,49 @@ public class ProductosController implements Initializable {
         stage.setScene(scene);
         stage.show();
     }
-
-    @FXML
-    private void comboEvent(ActionEvent event) {
-        System.out.println(Categoria.getValue());
-    }
-
     @FXML
     private void registrarProducto(ActionEvent event) {
-        String id = txtIdP.getText();
-        String nombreProducto = txtNombreP.getText();
-        String stockStr = txtStockP.getText();
-        String precioStr = txtPrecioP.getText();
-
-        if (id.isEmpty() || nombreProducto.isEmpty() || stockStr.isEmpty() || precioStr.isEmpty() || Categoria.getValue() == null) {
-            System.out.println("Faltan datos por llenar.");
-            return;
-        }
-
         try {
-            int stock = Integer.parseInt(stockStr);
-            double precio = Double.parseDouble(precioStr);
-            LocalDate fechaActual = LocalDate.now();
-
-            System.out.println("Producto registrado:");
-            System.out.println("ID: " + id);
-            System.out.println("Nombre: " + nombreProducto);
-            System.out.println("Categoría: " + Categoria.getValue());
-            System.out.println("Stock: " + stock);
-            System.out.println("Precio: $" + precio);
-            System.out.println("Fecha: " + fechaActual);
-
-        } catch (NumberFormatException e) {
-            System.out.println("Stock o precio no válidos.");
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/archivos/guardarProductos.fxml"));
+            Parent root = loader.load();
+            setRootNode(root);
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
 
 
     @FXML
     private void modificarProducto(ActionEvent event) {
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/archivos/modificarProductos.fxml"));
+            Parent root = loader.load();
+            setRootNode(root);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     @FXML
     private void buscarProducto(ActionEvent event) {
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/archivos/buscarProductos.fxml"));
+            Parent root = loader.load();
+            setRootNode(root);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     @FXML
     private void eliminarProducto(ActionEvent event) {
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/archivos/eliminarProductos.fxml"));
+            Parent root = loader.load();
+            setRootNode(root);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
 }

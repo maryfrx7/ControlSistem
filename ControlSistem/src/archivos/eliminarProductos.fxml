@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="290.0" prefWidth="311.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controladores.EliminarProductosController">
+   <children>
+      <AnchorPane layoutX="3.0" prefHeight="314.0" prefWidth="306.0">
+         <children>
+            <TextField fx:id="txtIdConfirmacion" layoutX="43.0" layoutY="157.0" onAction="#eliminarProducto" prefHeight="30.0" prefWidth="220.0" promptText="Id" styleClass="textfield" stylesheets="@../estilos/productos.css" />
+            <Button fx:id="btnAceptar" layoutX="120.0" layoutY="227.0" mnemonicParsing="false" onAction="#eliminarProducto" styleClass="btn-registrarproducto" stylesheets="@../estilos/productos.css" text="Aceptar" />
+            <TextField fx:id="txtIdEliminar" layoutX="43.0" layoutY="68.0" onAction="#eliminarProducto" prefHeight="30.0" prefWidth="220.0" promptText="Id eliminar" styleClass="textfield" stylesheets="@../estilos/productos.css" />
+            <Text layoutX="43.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Por favor, confirma el id" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

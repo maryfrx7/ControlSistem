@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="290.0" prefWidth="311.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controladores.ModificarProductosController">
+   <children>
+      <AnchorPane layoutX="3.0" prefHeight="314.0" prefWidth="306.0">
+         <children>
+            <TextField fx:id="txtNombreNuevo" layoutX="43.0" layoutY="113.0" onAction="#registrarProducto" prefHeight="30.0" prefWidth="220.0" promptText="Nombre producto" styleClass="textfield" stylesheets="@../estilos/productos.css" />
+            <TextField fx:id="txtStockNuevo" layoutX="43.0" layoutY="157.0" onAction="#registrarProducto" prefHeight="30.0" prefWidth="220.0" promptText="Stock" styleClass="textfield" stylesheets="@../estilos/productos.css" />
+            <TextField fx:id="txtPrecioNuevo" layoutX="44.0" layoutY="194.0" onAction="#registrarProducto" prefHeight="30.0" prefWidth="220.0" promptText="Precio" styleClass="textfield" stylesheets="@../estilos/productos.css" />
+            <TextField fx:id="txtIdNuevo" layoutX="44.0" layoutY="72.0" onAction="#registrarProducto" prefHeight="30.0" prefWidth="220.0" promptText="Id" styleClass="textfield" stylesheets="@../estilos/productos.css" />
+            <ComboBox fx:id="CategoriaNuevo" layoutX="43.0" layoutY="237.0" prefHeight="30.0" prefWidth="220.0" promptText="Categoría" styleClass="textfield" stylesheets="@../estilos/productos.css" />
+            <Button fx:id="btnAceptar" layoutX="120.0" layoutY="274.0" mnemonicParsing="false" onAction="#registrarProducto" styleClass="btn-registrarproducto" stylesheets="@../estilos/productos.css" text="Aceptar" />
+            <TextField fx:id="txtIdActual" layoutX="44.0" layoutY="32.0" onAction="#registrarProducto" prefHeight="30.0" prefWidth="220.0" promptText="Id a modificar" styleClass="textfield" stylesheets="@../estilos/productos.css" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
